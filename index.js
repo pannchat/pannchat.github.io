@@ -126,7 +126,7 @@ function calc(){
     }else{
         capacity.innerHTML = `수조의 물 용량은 약 <b>${mytank.toFixed(2)}L</b>`
     }
-    fetch('https://pannchat.github.io/supplies_product.json')
+    fetch('https://fishhi.kr/supplies_product.json')
     .then((res) => res.json())
     .then((data) => {
     data.item.forEach(el => {
@@ -158,7 +158,7 @@ const img = document.getElementById('modal-image');
 
 const openModal = (id) =>{
     
-    fetch('https://pannchat.github.io/supplies_product_detail.json')
+    fetch('https://fishhi.kr/supplies_product_detail.json')
     .then((res)=> res.json())
     .then((data) =>{
         items = data.item;
@@ -186,7 +186,7 @@ function tooltip(){
     }, 3000);
 
     var url = document.getElementById('url');
-    url.innerText = `http://fishhi.kr`;
+    url.innerText = `https://fishhi.kr`;
 
     var range = document.createRange();
     range.selectNode(url.childNodes[0]);
@@ -198,7 +198,7 @@ function tooltip(){
 }
 
 
-fetch('https://pannchat.github.io/supplies_product.json')
+fetch('https://fishhi.kr/supplies_product.json')
 .then((res) => res.json())
 .then((data) => {
     var searchContainer = document.getElementById('search-container');
