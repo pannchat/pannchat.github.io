@@ -5,6 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 html{
     background-color: #f4f4f4;
     
@@ -361,7 +362,46 @@ input[type=text], input[type=button] {
 #clipboard > img{
     position:absolute;width:20px;left:50%;top:50%;transform:translate(-50%,-50%)
 }
-ul{
-    padding-inline-start: 0;
-    list-style:none; 
+
+@media (min-width: 615px) {
+    ul{
+        padding-inline-start: 0;
+        list-style:none; 
+    }
+    #search-container{
+        display: flex;
+        flex:1 1 300px;
+        max-width:300px;
+    }
+}
+@media (min-width: 615px) {
+    ul{
+        padding-inline-start: 0;
+        list-style:none; 
+    }
+    #search-container{
+        display: flex;
+        flex:1 1 300px;
+        max-width:300px;
+    }
+}
+
+@media (max-width: 616px) {
+    ul{
+        padding-inline-start: 0;
+        list-style:none; 
+    }
+    #search-container{
+        display: flex;
+        flex:1 1 300px;
+        max-width:300px;
+    }
+}
+@media (min-width: 617px) {
+    #search-container{
+        display: flex;
+        flex:1 1 300px;
+        max-width:300px;
+        margin-left:40px;
+    }
 }
