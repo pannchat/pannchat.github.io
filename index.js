@@ -186,7 +186,7 @@ function tooltip(){
     }, 3000);
 
     var url = document.getElementById('url');
-    url.innerText = `http://`;
+    url.innerText = `https://pannchat.github.io`;
 
     var range = document.createRange();
     range.selectNode(url.childNodes[0]);
