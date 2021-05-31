@@ -245,7 +245,7 @@ fetch('https://pannchat.github.io/supplies_product.json')
             <p style="">${el.productName}</p>
             권장 사용량 : ${el.recommendedUsage1}L 당 ${el.recommendedUsage2}cc<br>
             내 어항 사용량 : <b id="item-${el.id}">?</b> 권장<br>
-            <a href="#" onclick="openModal(${el.id})" id="open">상세 설명서 보기</a>
+            <a onclick="openModal(${el.id})" class="open">상세 설명서 보기</a>
         </div>
         </li>`;
     });
