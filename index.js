@@ -165,7 +165,7 @@ const openModal = (id) =>{
         item = items.filter((e) =>{
             return(e.fid === id);
         });
-        img.src = item[0].descriptionImage;
+        img.src = './thumbnails/' + item[0].descriptionImage;
         modal.classList.remove("hidden");
     });
     
@@ -240,7 +240,7 @@ fetch('https://pannchat.github.io/supplies_product.json')
     //     div.appendChild(link);
         elList += `
         <li class="search-list">
-        <img src="${el.img}" class="supplies-product-img">
+        <img src="./thumbnails/${el.img}" class="supplies-product-img">
         <div style="">
             <p style="">${el.productName}</p>
             권장 사용량 : ${el.recommendedUsage1}L 당 ${el.recommendedUsage2}cc<br>
