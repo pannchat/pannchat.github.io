@@ -231,14 +231,14 @@
             const modal = document.querySelector(".modal");
             const overlay = modal.querySelector(".md_overlay");
 
-            const openModal = () =>{
+            const openModal = (id) =>{
                 modal.classList.remove("hidden");
             }
             const closeModal = () => {
                 modal.classList.add("hidden")
             }
 
-            openBtn.addEventListener("click", openModal);
+
             closeBtn.addEventListener("click", closeModal); 
 
             function tooltip(){
@@ -272,12 +272,12 @@
                    elList += `
                     <li class="search-list">
                     <img src="${el.img}" class="supplies-product-img">
-                    <div style="min-width:200px">
-                    <p style="font-weight:bold;font-size:1.1rem">네오 C</p>
-                    권장 사용량 : ${el.recommendedUsage1}L 당 ${el.recommendedUsage2}cc<br>
-                    내 어항 사용량 : <b id="item-${index}">?</b> 권장<br>
-                    <a href="#" id="open">상세 설명서 보기</a>
-                    </div>
+                        <div style="min-width:200px">
+                            <p style="font-weight:bold;font-size:1.1rem">네오 C</p>
+                            권장 사용량 : ${el.recommendedUsage1}L 당 ${el.recommendedUsage2}cc<br>
+                            내 어항 사용량 : <b id="item-${index}">?</b> 권장<br>
+                            <a href="#" onclick="openModal(${el.id})" id="open">상세 설명서 보기</a>
+                        </div>
                     </li>`;
                 });
                 searchContainer.innerHTML = elList;
