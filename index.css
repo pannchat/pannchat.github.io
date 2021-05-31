@@ -70,7 +70,7 @@ div{
     display:flex;
     
     border-radius: 5px;
-    padding:10px;
+
 }
 .search-list > * {
     margin: 0px;
@@ -360,4 +360,8 @@ input[type=text], input[type=button] {
 }
 #clipboard > img{
     position:absolute;width:20px;left:50%;top:50%;transform:translate(-50%,-50%)
+}
+ul{
+    padding-inline-start: 0;
+    list-style:none; 
 }
