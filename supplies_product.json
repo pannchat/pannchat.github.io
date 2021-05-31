@@ -1,0 +1,25 @@
+{
+    "item":[
+        {
+            "id" : 1,
+            "img" : "",
+            "additionalExplanation" : "",
+            "productName" : "네오 C",
+            "searchWords" : [
+                "neo c", "물갈이제", "염소제거제"
+            ],
+            "recommendedUsage1":40,
+            "recommendedUsage2":10
+        },{
+            "id" : 2,
+            "img" : "",
+            "additionalExplanation" : "",
+            "productName" : "네오 A",
+            "searchWords" : [
+                "neo a", "박테리아제", "물잡이"
+            ],
+            "recommendedUsage1":40,
+            "recommendedUsage2":10
+        }
+    ]
+}
