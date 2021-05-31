@@ -362,19 +362,14 @@ input[type=text], input[type=button] {
 #clipboard > img{
     position:absolute;width:20px;left:50%;top:50%;transform:translate(-50%,-50%)
 }
-
-@media (min-width: 615px) {
-    ul{
-        padding-inline-start: 0;
-        list-style:none; 
-    }
-    #search-container{
-        display: flex;
-        flex:1 1 300px;
-        max-width:300px;
-    }
+/* input number 버튼제거*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
-@media (min-width: 615px) {
+
+@media (max-width: 615px) {
     ul{
         padding-inline-start: 0;
         list-style:none; 
@@ -386,17 +381,7 @@ input[type=text], input[type=button] {
     }
 }
 
-@media (max-width: 616px) {
-    ul{
-        padding-inline-start: 0;
-        list-style:none; 
-    }
-    #search-container{
-        display: flex;
-        flex:1 1 300px;
-        max-width:300px;
-    }
-}
+
 @media (min-width: 617px) {
     #search-container{
         display: flex;
