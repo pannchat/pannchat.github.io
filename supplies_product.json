@@ -20,6 +20,38 @@
             ],
             "recommendedUsage1":40,
             "recommendedUsage2":10
+        },
+        {
+            "id" : 3,
+            "img" : "neov.png",
+            "additionalExplanation" : "",
+            "productName" : "네오 V 블랙",
+            "searchWords" : [
+                "neo v", "수질개선", "박테리아"
+            ],
+            "recommendedUsage1":40,
+            "recommendedUsage2":10
+        },        {
+            "id" : 4,
+            "img" : "pimafix.jpg",
+            "additionalExplanation" : "",
+            "productName" : "피마픽스",
+            "searchWords" : [
+                "pimafix"
+            ],
+            "recommendedUsage1":38,
+            "recommendedUsage2":5
+        },{
+            "id" : 5,
+            "img" : "melafix.jpg",
+            "additionalExplanation" : "",
+            "productName" : "멜라픽스",
+            "searchWords" : [
+                "melafix"
+            ],
+            "recommendedUsage1":38,
+            "recommendedUsage2":5
         }
+
     ]
 }

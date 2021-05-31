@@ -165,7 +165,7 @@ const openModal = (id) =>{
         item = items.filter((e) =>{
             return(e.fid === id);
         });
-        img.src = './thumbnails/' + item[0].descriptionImage;
+        img.src = './thumbnails/detail/' + item[0].descriptionImage;
         modal.classList.remove("hidden");
     });
     

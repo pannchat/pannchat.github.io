@@ -5,10 +5,17 @@
             "id" : 1,
             "descriptionImage" : "neoc.png"
 
-        },{
+        },
+        {
             "fid" : 2,
             "id" : 2,
             "descriptionImage" : "neoa.png"
+        },
+        {
+            "fid" : 3,
+            "id" : 3,
+            "descriptionImage" : "neov.png"
         }
+
     ]
 }
