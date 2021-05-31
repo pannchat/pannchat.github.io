@@ -158,7 +158,7 @@ const img = document.getElementById('modal-image');
 
 const openModal = (id) =>{
     
-    fetch('http://pannchat.github.io/supplies_product_detail.json')
+    fetch('https://pannchat.github.io/supplies_product_detail.json')
     .then((res)=> res.json())
     .then((data) =>{
         items = data.item;
