@@ -2,7 +2,7 @@
     "item":[
         {
             "id" : 1,
-            "img" : "",
+            "img" : "neoc.png",
             "additionalExplanation" : "",
             "productName" : "네오 C",
             "searchWords" : [
@@ -12,7 +12,7 @@
             "recommendedUsage2":10
         },{
             "id" : 2,
-            "img" : "",
+            "img" : "neoa.png",
             "additionalExplanation" : "",
             "productName" : "네오 A",
             "searchWords" : [
