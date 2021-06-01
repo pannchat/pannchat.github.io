@@ -51,7 +51,18 @@
             ],
             "recommendedUsage1":38,
             "recommendedUsage2":5
+        },
+        {
+            "id" : 6,
+            "img" : "flourishexel.png",
+            "additionalExplanation" : "",
+            "productName" : "플로엑셀",
+            "searchWords" : [
+                "flourishexel"
+            ],
+            "recommendedUsage1":40,
+            "recommendedUsage2":5
         }
-
+        
     ]
 }

@@ -25,7 +25,11 @@
             "fid" : 5,
             "id" : 5,
             "descriptionImage" : "melafix.jpeg"
+        },
+        {
+            "fid" : 6,
+            "id" : 6,
+            "descriptionImage" : "flourishexel.jpeg"
         }
-
     ]
 }
