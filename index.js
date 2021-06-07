@@ -1,8 +1,40 @@
+
 if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
             navigator.serviceWorker.register("/service-worker.js");
         });
     }
+// Initialize deferredPrompt for use later to show browser install prompt.
+let deferredPrompt;
+const divInstall = document.getElementsByClassName('divInstall')[0];
+window.addEventListener('beforeinstallprompt', (event) => {
+    console.log('👍', 'beforeinstallprompt', event);
+    // Stash the event so it can be triggered later.
+    window.deferredPrompt = event;
+    // Remove the 'hidden' class from the install button container
+    divInstall.classList.toggle('hidden', false);
+  });
+
+const buttonInstall = document.getElementById('buttonInstall');
+buttonInstall.addEventListener('click', async () => {
+    console.log('👍', 'butInstall-clicked');
+    const promptEvent = window.deferredPrompt;
+    if (!promptEvent) {
+      // The deferred prompt isn't available.
+      return;
+    }
+    // Show the install prompt.
+    promptEvent.prompt();
+    // Log the result
+    const result = await promptEvent.userChoice;
+    console.log('👍', 'userChoice', result);
+    // Reset the deferred prompt variable, since
+    // prompt() can only be called once.
+    window.deferredPrompt = null;
+    // Hide the install button.
+    divInstall.classList.toggle('hidden', true);
+  });
+
 function calc(){
     var s = 100;    // scale
     // 화면에 보여지는 값들
