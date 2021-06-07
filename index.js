@@ -34,7 +34,11 @@ buttonInstall.addEventListener('click', async () => {
     // Hide the install button.
     divInstall.classList.toggle('hidden', true);
   });
-
+  window.addEventListener('appinstalled', (event) => {
+    console.log('👍', 'appinstalled', event);
+    // Clear the deferredPrompt so it can be garbage collected
+    window.deferredPrompt = null;
+  });
 function calc(){
     var s = 100;    // scale
     // 화면에 보여지는 값들
