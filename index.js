@@ -1,3 +1,8 @@
+if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/service-worker.js");
+        });
+    }
 function calc(){
     var s = 100;    // scale
     // 화면에 보여지는 값들
