@@ -14,7 +14,7 @@
         <meta charset="utf-8">
         <meta name="viewport" 
           content="width=device-width, height=device-height, 
-                     minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
+                     minimum-scale=5.0, maximum-scale=5.0, initial-scale=1.0">
         <meta name="theme-color" content="#f4f4f4" />
         <meta name="author" content="park jiwon">
         <meta name="description" content="물생활 어플리케이션::물양계산기">
@@ -65,13 +65,13 @@
             </div>
                 <div style="display:flex;justify-content: flex-end;width:100%">
                     <span>상세 설정</span>
-                    <label class="switch-button"> <input type="checkbox" id="checkbox"/> <span class="onoff-switch"></span> </label>
+                    <label class="switch-button">상세설정 Toggle<input type="checkbox" id="checkbox"/> <span class="onoff-switch"></span> </label>
                 </div>
                 
                 <div class="flex-box" style="margin:0px;flex-direction: row;justify-content: flex-end;">
                     <input id="calc-btn" type="button" value="계산" onclick="calc()"/>
                     <div id="clipboard"  onclick="tooltip()" style="">
-                        <img src="./icons/clipboard.svg">
+                        <img src="./icons/clipboard.svg" alt="복사 버튼">
                         <div data-tooltip-text='링크가 복사되었습니다.' id="tooltip"></div>
                     </div>
                     </div>
