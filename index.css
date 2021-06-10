@@ -137,7 +137,8 @@ div{
     left:50px;
     box-sizing: border-box;
     border: 5px solid #76899d;
-    background-color: rgba(126, 200, 223, 0.3);
+    /* background-color: rgba(126, 200, 223, 0.3); */
+    background-color: rgba(18, 129, 159,0.3);
 }
 
 
