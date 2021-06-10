@@ -281,7 +281,7 @@ fetch('https://fishhi.kr/supplies_product.json')
     //     div.appendChild(link);
         elList += `
         <li class="search-list">
-        <img src="./thumbnails/${el.img}" class="supplies-product-img">
+        <img src="./thumbnails/${el.img}" class="supplies-product-img" alt="${el.productName} 상품">
         <div style="">
             <p style="">${el.productName}</p>
             권장 사용량 : ${el.recommendedUsage1}L 당 ${el.recommendedUsage2}cc<br>
