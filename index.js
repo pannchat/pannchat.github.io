@@ -39,6 +39,8 @@ buttonInstall.addEventListener('click', async () => {
     // Clear the deferredPrompt so it can be garbage collected
     window.deferredPrompt = null;
   });
+
+let warning = 0
 function calc(){
     var s = 100;    // scale
     // 화면에 보여지는 값들
@@ -55,6 +57,27 @@ function calc(){
     var tankSand2 = tankSand;
     var waterLevel2 = waterLevel;
     var min = Math.min(tankWidth,tankDepth,tankHeight)
+
+    if (warning > 5){
+        alert("그만 괴롭혀라 " + '🤬'.repeat(warning));
+    }
+    console.log(warning)
+    if(Math.min(tankWidth,tankDepth,tankHeight,tankSand,waterLevel,tankWeight) < 0){
+        alert("ㅎㅎ😡");
+        warning++;
+        return;
+    }else if (tankWidth > tankDepth*100 || tankWidth > tankHeight*100 ||  tankDepth > tankWidth*100 || tankDepth > tankHeight*100 || tankHeight > tankDepth*100 || tankHeight > tankWidth*100){
+        alert("이런 어항이 어딨어요 😮‍💨");
+        warning++;
+        return;
+    }else if(Math.max(tankWidth,tankDepth,tankHeight,tankSand,waterLevel,tankWeight) > 10000){
+        alert("ㅎㅎ바다속에 사세요?🎣");
+        warning++;
+        return;
+    }
+
+
+
     tankWidth = (tankWidth/min)*s;
     tankHeight = (tankHeight/min)*s;
     tankDepth = (tankDepth/min)*s;
@@ -133,21 +156,21 @@ function calc(){
     var containerHeight = document.querySelector('.tank-container').clientHeight;
     var face = document.querySelectorAll('.face');
 
-    // alert();
+    // 수조 가운데 정렬
 
     face.forEach(
         (el) =>{
             if(tankWidth>tankDepth){
-                el.style.left = (containerWidth/2) - (front.clientWidth/2);
+                el.style.left = (containerWidth/2) - (front.clientWidth/2) + "px";
             }
             else if(tankWidth<tankDepth){
-                el.style.left = (containerWidth - Math.min(front.clientWidth,right.clientWidth))/2;
+                el.style.left = (containerWidth - Math.min(front.clientWidth,right.clientWidth))/2 + "px";
             }
             else{
-                el.style.left = (containerWidth - Math.min(front.clientWidth,right.clientWidth))/2;
+                el.style.left = (containerWidth - Math.min(front.clientWidth,right.clientWidth))/2 + "px";
             }
             
-            el.style.top = (containerHeight -front.clientHeight)/2;
+            el.style.top = (containerHeight -front.clientHeight)/2 + "px";
         }
         
         );
