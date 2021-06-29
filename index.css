@@ -402,10 +402,4 @@ input[type="number"]::-webkit-inner-spin-button {
 .divInstall{
     display:none;
 }
-/* 크롬에서만 PWA 버튼 활성화 */
-@media screen and (-webkit-min-device-pixel-ratio:0) { 
 
-    #buttonInstall{
-        display:block;
-    }
-}
