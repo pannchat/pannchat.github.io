@@ -333,6 +333,10 @@ div > span{
     position:absolute;
     margin:3px 10px;
 }
+.open{
+    cursor: pointer;
+    text-decoration-line: underline;
+}
 .open:visited{
     color:#393939;
 }
